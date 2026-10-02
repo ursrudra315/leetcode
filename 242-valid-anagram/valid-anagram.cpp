@@ -8,10 +8,9 @@ public:
         }
         for (int i = 0 ; i < s.length() ; i++){
             mp1[s[i]]++;
-        }
-        for(int i = 0 ; i < s.length() ; i++){
             mp2[t[i]]++;
         }
+        
         for( int i = 0 ; i < s.length() ; i++){
             if(mp1[s[i]] != mp2[s[i]]){
                 return false;
